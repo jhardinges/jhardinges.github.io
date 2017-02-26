@@ -1,0 +1,101 @@
+/* This is a CSS comment */
+
+body {
+	background: rgb(134,214,185);
+
+	/* if you change the background of the main, this will still show up when scrolling... */
+
+	font-family: Helvetica, Arial, sans-serif;
+	background-image: url(../images/me.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	/* fixes for scrolling */
+
+	/* these two dots tell the browser to go up two levels in the folder structure */
+
+}
+
+.main {
+	background: rgba(255,255,255,0.9);
+	/* a, and the last number in brackets is the opacity value */
+	width: 600px;
+	margin: 0 auto;
+	padding: 35px;
+	border-radius: 20px;
+}
+
+/* .main refers to the div in html file */
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+	background: rgb(134,214,97);
+	margin: 50px;
+	font-family: 'Ubuntu', sans-serif;
+	/* this tells the browser to display the header using that text */
+
+
+	/* note the 50px margin is both horizontal and vertical... */
+	/* don't design just for your own screen!; don't use pixel values... */
+
+}
+
+h2 {
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: 10px;
+	font-size: 20px;
+}
+
+img {
+	display: block;
+	border: 10px solid yellow;
+	padding: 20px;
+	background: white;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+
+	/* images are not block content: the above code will centre the image */
+	/* instead of the above two lines of auto, we can have margin: 0 auto */
+	/* 50% = round */
+}
+
+p,
+ol,
+ul {
+
+/* these commas allow you to do the same thing to multiple elements */
+
+	line-height: 1.6;
+	list-style: none;
+	padding-left: 0;
+
+/* the padding left shifts the stuff back over to the left (the default setting in the browser is to indent these elements) */
+
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+	color: blue;
+		/* a is how we refer to links (see html sheet) */
+}
+
+a:hover {
+	text-decoration: underline;
+	color: green;
+	/* this overrides other styling when it meets current state (which is hovering) */
+
+}
+
+h3 {
+	margin-bottom: 0;
+	/* this overcomess css quirk of overlapping margins at the end of effect */
+	cursor: pointer;
+}
+
+h3 + * {
+	display: none;
+	/* anything that comes after a h3 is default hidden */
+}
